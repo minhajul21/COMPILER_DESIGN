@@ -232,8 +232,9 @@ int main(){
         else{
             cout << "Invalid option! Please try again." << endl;
         }
-        cout << "----------------------------------------" << endl;
+        cout << "------------------" << endl;
     }
 
     return 0;
 }
+
