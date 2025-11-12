@@ -121,7 +121,6 @@ void displayMinMax() {
 }
 
 int main() {
-    cout << "MENU \n";
     cout << "1. Check Numeric\n";
     cout << "2. Check Operator\n";
     cout << "3. Detect Comment Line\n";
@@ -192,11 +191,12 @@ int main() {
             default:
                 cout << "Invalid choice! Try again.\n";
         }
-        cout << "---------------------------\n";
+        cout << "-------------------------\n";
     }
 
     return 0;
 }
+
 
 
 
