@@ -1,15 +1,25 @@
 #include <iostream>
 using namespace std;
 
+bool checkOperator(char symbol) {
+    string operators = "+-*/%";
+    for (char op : operators) {
+        if (symbol == op)
+            return true;
+    }
+    return false;
+}
+
 int main() {
     char op;
     cout << "Enter an operator: ";
     cin >> op;
 
-    if (op == '+' || op == '-' || op == '*' || op == '/' || op == '%')
+    if (checkOperator(op))
         cout << "Arithmetic Operator" << endl;
     else
         cout << "Not an Arithmetic Operator" << endl;
 
     return 0;
 }
+
